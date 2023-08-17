@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     enum months{
-         jan,
+         jan=1,
          feb,
          march,
          april,
@@ -16,7 +16,7 @@ int main(){
          nov,
          dec,   
     };
-    for(int i=jan; i<dec; i++){
+    for(int i=jan; i<=dec; i++){
         cout<<i<<" "<<endl;
     }
     return 0;
