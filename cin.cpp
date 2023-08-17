@@ -9,7 +9,7 @@ int main(){
     cout<<"enter the value of b"<<endl;
     cin>>b;
 
-    cout<<"The value of a and b is  "<<a<<b<<endl;
+    cout<<"The value of a and b is  "<<a<<" & "<<b<<endl;
 
     return 0;
 }
