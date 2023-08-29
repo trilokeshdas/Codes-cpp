@@ -18,6 +18,14 @@ public:
         cout<<"the complex number is "<<rl<<" + "<<im<<"i"<<endl;
       }
 };
+// complex :: complex()
+// {
+    
+//     cout<<"enter the real part"<<endl;
+//     cin>>rl;
+//     cout<<"enter the imaginary part"<<endl;
+//     cin>>im;
+// }
 
 
 int main(){
