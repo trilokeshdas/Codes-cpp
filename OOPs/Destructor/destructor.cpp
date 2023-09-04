@@ -1,7 +1,12 @@
 #include<iostream>
 using namespace std;
 /*in destructor when the object goes out of scope it is freed by destructor.
-destructor works in reverse order. first it deletes elements which are executed at last*/
+destructor works in reverse order. first it deletes elements which are executed at last
+1. Destructor is invoked automatically by the compiler when its corresponding constructor goes out of scope and releases the memory space that is no longer required by the program.
+2. Destructor neither requires any argument nor returns any value therefore it cannot be overloaded.
+3. Destructor  cannot be declared as static and const;
+4. Destructor should be declared in the public section of the program.
+5. Destructor is called in the reverse order of its constructor invocation*/
 class destructor
 {
     int number;
