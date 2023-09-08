@@ -6,7 +6,8 @@ destructor works in reverse order. first it deletes elements which are executed 
 2. Destructor neither requires any argument nor returns any value therefore it cannot be overloaded.
 3. Destructor  cannot be declared as static and const;
 4. Destructor should be declared in the public section of the program.
-5. Destructor is called in the reverse order of its constructor invocation*/
+5. Destructor is called in the reverse order of its constructor invocation
+In destructor, objects are destroyed in the reverse of object creation.*/
 class destructor
 {
     int number;

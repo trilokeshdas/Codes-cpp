@@ -13,6 +13,11 @@ int main(){
     int a=10;
     int *ptr=&a;
     cout<<ptr<<endl;
-    cout<<*ptr;
+    cout<<*ptr<<endl;; 
     //here substr(a,b) means the charcter starts from a and prints b number of characters
+    //REFERENCE PART
+    int & ref=a;
+    cout<<ref<<endl; //Like pointer it there is a invisible sign * before ref
+    cout<<&ref<<endl;//it gives the same address as that of the variable as 
+                    //ref is the copycat of the variable
 }

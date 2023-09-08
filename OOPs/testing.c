@@ -1,10 +1,19 @@
-#include<stdlib.h>
 #include<stdio.h>
+#include<stdlib.h>
 
-
+void print(int a)
+{
+   if(a==0)
+   {
+      return;
+   }
+   else{
+   printf("Trilokesh Das \n");
+   a--;
+   print(a);
+   }
+}
 int main(){
-    float a;
-    a=(36*(float )9/5)+32;
-    printf("%f",a);
-    return 0;
+   print(5);
+   return 0;
 }
