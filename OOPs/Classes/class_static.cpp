@@ -17,7 +17,7 @@ public:
        // cout<<marks cannot bcoz it is not a static member
     }
 };
-int employee :: count;//here we can initialise to any value but by default it is 0 
+int employee :: count=1;//here we can initialise to any value but by default it is 0 
 void employee :: input()
 {
     cout<<"enter the marks "<<endl;

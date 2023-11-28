@@ -3,7 +3,7 @@ using namespace std;
 int *merge(int *a, int *b,int ub1, int ub2)
 {   
     int i=0,j=0,k=0;
-    int *sort=(int *)malloc((ub1*ub2)*sizeof(int));
+    int *sort=(int *)malloc((ub1+ub2)*sizeof(int));
     while(i<ub1 && j<ub2)
     {
         if(a[i]<b[j])
