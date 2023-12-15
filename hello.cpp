@@ -1,42 +1,42 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
+class base{
+    public:
+        int val;
+        base(){};
+        base(int val){
+            this->val=val;
+        }
 
-class Solution {
-public:
-    int strStr(string haystack, string needle) {
-        int i=0, j=0, k;
-        int n=needle.length();
-        while(i<n && j<haystack.length())
-        {
-            if(needle.at(i)==haystack.at(j))
-            {
-                i++;
-                j++;
-            }
-            else
-            {
-                j=j-i+1;
-                i=0;
-            }
+        base set_value(int num){
+            val=num;
+            return *this;
         }
-        if(i!=needle.length())
-        {
-            return -1;
+
+        void display(){
+            cout<<"value of number in the base class is "<< val<<endl;
         }
-        else
-        {
-        k=j-needle.length();
-        return k;
-        }
-    }
 };
+
+class derived : public base{
+    public:
+        int val1;
+        derived(int a, int b):base(b){
+            val1=a;
+
+        }
+       derived(){};
+       void display(){
+            cout<<"value of number in the derived class is "<< val1<<endl;
+        }
+};
+
 int main(){
-    Solution s;
-    int n;
-    string haystack="mississippi";
-    string needle="issi";
-    n=s.strStr(haystack,needle);
-    cout<<n;
-    return 0;
+    base b1;
+    //cout<<"ok\n";
+    derived d1(10,11);
+    base *point_to_base=&d1;
+    point_to_base->display();
+    
 }
